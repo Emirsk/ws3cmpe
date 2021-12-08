@@ -1,0 +1,37 @@
+package coffe;
+import java.util.Scanner;
+public class shop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    //118202036 Oğulcan Ünlütürk
+    //118202079 Emir Saim Kanıöz
+  Scanner sc = new Scanner(System.in);
+   System.out.println("Welcome our coffe shop :)");
+   System.out.println("Please choose a coffe type(Black or Latte)");
+   System.out.println("Please choose a coffe size(Big or Small)");
+   String  chooseCoffe = sc.nextLine();
+   String  chooseSize = sc.nextLine();
+   int  totalPay =0;
+   if (chooseCoffe.equals("Black")){
+	   totalPay =totalPay+10;
+	   if(chooseSize.equals("Big")) {
+		   totalPay= totalPay+5;
+	   }
+	   if(chooseSize.equals("Small")) {
+		   totalPay= totalPay;
+	   }
+	   System.out.println("The totalPay is "+ totalPay);
+   }
+   if (chooseCoffe.equals("Latte")){
+	   totalPay =totalPay+15;
+	   if(chooseSize.equals("Big")) {
+		   totalPay= totalPay+5;
+	   }
+	   if(chooseSize.equals("Small")) {
+		   totalPay= totalPay;
+	   }
+	   System.out.println("The totalPay is "+ totalPay + "$" );
+   }
+}
+}
